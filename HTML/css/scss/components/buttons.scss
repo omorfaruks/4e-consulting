@@ -1,0 +1,74 @@
+.btn {
+
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 28px;
+
+    &-primary {
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
+
+        &:hover,
+        &:active {
+            border: 1px solid $primary-color-light;
+            background-color: $primary-color-light;
+        }
+    }
+
+    &-primary-light {
+        background-color: $primary-color-lighter;
+        border: 1px solid $primary-color-lighter;
+
+        &:hover,
+        &:active {
+            border: 1px solid $primary-color;
+            background-color: $primary-color;
+        }
+    }
+
+    &-secondary {
+        background: $secondary-color;
+        border: 1px solid $secondary-color;
+
+        &:hover,
+        &:active {
+            border: 1px solid $primary-color-light;
+            background-color: $primary-color-light;
+        }
+    }
+
+    &-tertiary {
+        background: $primary-color-light;
+        border: 1px solid $primary-color-light;
+
+        &:hover,
+        &:active {
+            background: $secondary-color;
+            border: 1px solid $secondary-color;
+        }
+    }
+    &-outline {
+        &-primary {
+            border: 2px solid $primary-color;
+            color: $primary-color;
+
+            &:hover,
+            &:active {
+                border: 2px solid $primary-color;
+                background-color: $primary-color;
+            }
+
+        }
+    }
+
+    &__xl {
+        width: 270px;
+
+    }
+
+    &__lg {
+        width: 188px;
+    }
+
+}

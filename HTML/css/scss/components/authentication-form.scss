@@ -1,0 +1,33 @@
+.authentication-form {
+    padding: 35px 0px 258px 0px;
+
+    &__wrap {
+        background: $light-bg-color;
+        padding: 65px 95px;
+        border-radius: 15px;
+    }
+
+    &__form {
+        
+        &-link{
+            color: #B7B6B6;
+            text-decoration: none;
+            border-bottom: 1px solid #B7B6B6;
+            padding-bottom: 3px;
+
+            &:hover {
+                color: $primary-color;
+                border-bottom: none;
+            }
+        }
+    }
+
+    @media (max-width: $screen-tablet) {
+        padding: 70px 0px 150px 0px;
+
+        &__wrap {
+            padding: 25px 15px;
+        }
+     }
+
+}

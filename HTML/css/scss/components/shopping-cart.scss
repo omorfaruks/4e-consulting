@@ -1,0 +1,93 @@
+.shopping-cart {
+    padding: 100px 0px 200px 0px;
+
+    &__header {
+        a {
+            color: $text-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    &__table {
+        &-head{
+            border-bottom: 5px solid #C5E7F3;
+
+            th {
+                font-weight: 600;
+                padding-left: 0px;
+                vertical-align: middle;
+                color: $text-color;
+            }
+        }
+
+        &-row{
+            border-bottom: 1px solid $text-color;
+            
+            td {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 0px;
+                vertical-align: middle;
+            }
+        }
+
+        @media (max-width: $screen-tablet) {
+           
+            &-head{
+                display: none;
+            }
+
+            tbody, td, tr {
+                display: block;
+            }
+
+            tr {
+                border: 1px solid $text-color;
+                margin-top: 5px;
+            }
+
+            td {
+                border: none;
+                position: relative;
+                padding-left: 30% !important;
+                min-height: 31px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                vertical-align: middle;
+            }
+
+            td::before {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 30%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: 600;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+
+            td::before {
+                content: "" attr(data-for) "";
+            }
+
+            &-tfoot {
+                padding: 20px 0px;
+                
+                td {
+                    display: none;
+                }
+
+                &-td-info {
+                    display: block !important;
+                }
+            }
+
+         }
+    }
+}

@@ -1,0 +1,44 @@
+.contact-us {
+    padding: 200px 0px;
+
+    &__info {
+        padding-bottom: 50px;
+
+        &--photo{
+            background: #1D748A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px;
+            border-radius: 15px;
+        }
+        &--name {
+            h6 {
+                font-weight: 600;
+                font-size: 18px;
+            }
+            
+        }
+        &--contact *{
+            font-weight: 600;
+        }
+        &--link{
+            font-weight: 600;
+            text-decoration: none;
+
+            img {
+                margin-top: -5px;
+            }
+
+            &:hover {
+                text-decoration: underline;
+                color: $primary-color;
+            }
+        }
+    }
+
+    @media (max-width: $screen-tablet) {
+        padding: 100px 0px;
+
+     }
+}

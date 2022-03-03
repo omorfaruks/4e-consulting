@@ -1,0 +1,30 @@
+.owl-carousel {
+
+    &.product-carousel {
+        @media (min-width: $screen-tablet) {
+            .owl-nav{
+                position: absolute;
+                top: 38%;
+                width: 100%;
+                z-index: -1;
+    
+            }
+            .owl-prev {
+                position: absolute;
+                left: -65px;
+            }
+    
+            .owl-next{
+                position: absolute;
+                right: -65px;
+            }
+        }
+       
+    }
+
+    .owl-nav{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+}

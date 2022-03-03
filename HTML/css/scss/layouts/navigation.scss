@@ -1,0 +1,44 @@
+.navbar {
+    &-toggler:focus {
+        box-shadow: none !important;
+    }
+
+    &-nav {
+        @media (max-width: $screen-tablet) {
+            position: fixed;
+            background: #fff;
+            width: 85%;
+            right: 0px;
+            height: 100vh;
+            top: 0px;
+            align-items: normal !important;
+            padding: 20px;
+            box-shadow: -100px 0px 90px 1px #ebebeb;
+            z-index: 1000000;
+         }
+    }
+
+    .nav {
+
+        &-link {
+            color: $text-color;
+            font-weight: 600;
+
+            &.dropdown-toggle {
+                &::after {
+                    display: none;
+                }
+
+            }
+
+            &:hover {
+                color: $primary-color;
+            }
+
+            &.active {
+                color: $primary-color;
+                font-weight: bold;
+            }
+        }
+    }
+}

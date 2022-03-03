@@ -1,0 +1,103 @@
+.packages {
+    padding: 150px  0px;
+
+    &__box{
+        width: 380px;
+        height: 471px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 30px;
+
+        &-overlay {
+            background-image: url("../assets/membership-bg-overlay.png");
+            width: 380px;
+            height: 471px;
+            padding: 48px 80px 0px 27px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        &--leadership {
+            
+            .packages__box-overlay {
+                background-image: url("../assets/leadership-bg-overlay.png") !important;
+            }
+        }
+
+        &--reg-subscription{
+
+            .packages__box-overlay {
+                background-image: url("../assets/reg-submission-bg-overlay.png") !important;
+            }
+        }
+
+        &-img{
+            background-color: $white-color;
+            width: 99px;
+            height: 78px;
+            position: relative;
+            left: -27px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding-left: 10px;
+        }
+
+        &-header{
+            color: $white-color;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 25px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            padding-top: 120px;
+            padding-bottom: 30px;
+            min-height: 225px;
+        }
+
+        &-info{
+
+            &--period{
+                color: $white-color;
+            }
+
+            &--price{
+                color: $white-color;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 30px;
+                padding-top: 5px;
+            }
+
+            &--btn{
+                color: $white-color;
+                text-decoration: none;
+                font-weight: 600;
+
+                &:hover {
+                    color: $white-color;
+                    text-decoration: underline;
+                }
+            }
+            
+        }
+    }
+
+    @media (max-width: $screen-tablet) {
+            padding: 73px 0px;
+
+        &__box {
+            width: 100%;
+            
+
+            &-overlay {
+                width: 100%;
+            }
+        }
+        
+     }
+}

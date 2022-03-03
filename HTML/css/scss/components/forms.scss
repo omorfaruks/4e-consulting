@@ -1,0 +1,101 @@
+.form-floating {
+    .form-control {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #5E5E5E;
+        border-radius: 0px;
+        color: #5E5E5E;
+        padding-left: 4px;
+        padding-right: 4px;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        
+
+    }
+    label {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+
+.form-check {
+    &-input {
+        height: 1.3em;
+        width: 1.3em;
+
+        &:checked {
+            background-color: $primary-color;
+            border-color: $primary-color;
+        }
+    }
+
+    &-label {
+        padding-top: 4px;
+        padding-left: 4px;
+    }
+}
+
+
+.quantity-field {
+    border: 2px solid $border-color;
+    display: flex;
+    width: 140px;
+    height: 45px;
+    border-radius: 50pc;
+
+    &__colored {
+        border: 2px solid $primary-color;
+
+        .quantity-field__input {
+            color: $primary-color;
+        }
+
+        .quantity-field__decrease {
+            border-right: 2px solid $primary-color;
+        }
+
+        .quantity-field__increase {
+            border-left: 2px solid $primary-color;
+        }
+    }
+
+    &__input {
+        border: none !important;
+        width: 70px;
+        text-align: center;
+        font-weight: bold;
+        color: $text-color;
+        font-size: 20px;
+        box-shadow: none !important;
+    }
+    
+    &__decrease {
+        border: none;
+        background: no-repeat;
+        width: 35px;
+        border-right: 2px solid $border-color;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+
+        &:hover {
+            background-color: $light-bg-color;
+        }
+    }
+    
+    &__increase {
+        border: none;
+        background: no-repeat;
+        width: 35px;
+        border-left: 2px solid $border-color;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+
+        &:hover {
+            background-color: $light-bg-color;
+        }
+    }
+}

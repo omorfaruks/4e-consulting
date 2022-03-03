@@ -1,0 +1,33 @@
+.subscription-block {
+     position: relative;
+
+    &__overlay {
+        background-image: url(../assets/bg-overlay.png);
+        background-size: cover;
+        height: 946px;
+    }
+
+
+    &::before {
+        content: " ";
+        display: block;
+        width: 100%;
+        height: 112px;
+        background:  url("../assets/curve/subscription-curve-top.png");
+        position: absolute;
+        top: -48px;
+    }
+
+    &__content{
+        @media (min-width: $screen-tablet) {
+            padding-top: 240px;
+         }
+    }
+
+    @media (max-width: $screen-tablet) {
+        .btn__xl {
+            width: 100%;
+        }
+     }
+
+}

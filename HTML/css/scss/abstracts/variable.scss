@@ -1,0 +1,53 @@
+//Screen breakpoint
+$xs: "0";
+$sm: "576px";
+$md: "768px";
+$lg: "992px";
+$xl: "1200px";
+$xxl: "1400px";
+
+$screen-phone:              $sm !default;
+$screen-tablet:             $md !default;
+$screen-desktop:            $lg !default;
+$screen-lg-desktop:         $xl !default;
+$screen-ex-lg-desktop:      $xxl !default;
+$screen-phone-mini:         320px !default;
+
+//Color palette
+$primary-color:             #008BAD !default;
+
+$primary-color-light:       #4A7473 !default;
+
+$primary-color-lighter:     #9BDBF3 !default;
+
+$secondary-color:           #A7606F !default;
+
+$text-color:                #5E5E5E !default;
+
+$disabaled-bg:              #F9F9F9 !default;
+
+$border-color:              #9E9E9E !default;
+
+//On demand color
+$light-bg-color:            #F6F6F6 !default;
+$white-color:               #FFFFFF !default;
+
+// Gray base color for use across theme.
+$gray-base:                 #000 !default;
+$gray-333:                  lighten($gray-base, 20%) !default; // #333
+$gray-555:                  lighten($gray-base, 33.5%) !default; // #555
+$gray-666:                  lighten($gray-base, 40%) !default; // #666
+$gray-777:                  lighten($gray-base, 46.7%) !default; // #777
+$gray-999:                  lighten($gray-base, 60%) !default; // #999
+$gray-ccc:                  lighten($gray-base, 80%) !default; // #ccc
+$gray-eee:                  lighten($gray-base, 93.5%) !default; // #eee
+$gray-f5f5f5:               lighten($gray-base, 96%) !default; // #f5f5f5
+
+
+$font-large:       	        18px !default;
+$font-regular:              16px !default;
+$font-small:       	        14px !default;
+$gutter-space:              12px !default;
+
+//Helping variables
+$border-radius: 16px;

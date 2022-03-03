@@ -1,0 +1,36 @@
+@charset 'utf-8';
+
+//Vendor
+
+
+//Abstracts
+@import "scss/abstracts/typography.scss";
+@import "scss/abstracts/variable.scss";
+@import "scss/abstracts/mixin.scss";
+
+//Base Styles
+@import "scss/base/reset.scss";
+
+//Layout
+@import "scss/layouts/layout.scss";
+@import "scss/layouts/header.scss";
+@import "scss/layouts/navigation.scss";
+@import "scss/layouts/footer.scss";
+
+//Components
+@import "scss/components/buttons.scss";
+@import "scss/components/breadcrumb.scss";
+@import "scss/components/carowsel.scss";
+@import "scss/components/content-block.scss";
+@import "scss/components/testimonials.scss";
+@import "scss/components/subscription-block.scss";
+@import "scss/components/authentication-form.scss";
+@import "scss/components/forms.scss";
+@import "scss/components/shopping-cart.scss";
+@import "scss/components/accordion.scss";
+@import "scss/components/packages.scss";
+@import "scss/components/blog.scss";
+@import "scss/components/contact-us.scss";
+@import "scss/components/product.scss";
+
+
